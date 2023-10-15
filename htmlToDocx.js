@@ -1,6 +1,5 @@
 const path = require('path')
 const fs = require('fs')
-const jsdom = require("jsdom")
 const HTMLtoDOCX = require('html-to-docx')
 
 async function run (lista) {
@@ -45,7 +44,7 @@ async function run (lista) {
             concluido = true
         })
     })
-    return concluido
+    return concluido, results
 }
 
 module.exports = {
